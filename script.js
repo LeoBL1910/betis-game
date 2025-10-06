@@ -118,9 +118,10 @@ document.getElementById("hint-btn").addEventListener("click", ()=>{
 
 document.getElementById("skip-btn").addEventListener("click", ()=>{
   feedbackEl.textContent = `Se saltó: ${currentPlayer.name} — ${currentPlayer.position} — #${currentPlayer.number}`;
-  setTimeout(pickRandom, 3000);
+  setTimeout(pickRandom, 7000);
 });
 
 // inicializa el juego
 pickRandom();
+
 
