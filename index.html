@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modo Jugador - Real Betis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Modo Jugador — Real Betis</h1>
+    <p>Adivina nombre, posición y dorsal. Usa pistas si lo necesitas.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <img id="player-photo" src="images/01_alvaro_valles.jpg" alt="Foto del jugador">
+      <div class="player-info">
+        <p id="hint-area" class="hint-area">Pistas: —</p>
+      </div>
+    </section>
+
+    <section class="form">
+      <input id="input-name" type="text" placeholder="Nombre completo (ej. Borja Iglesias)" autocomplete="off">
+      <input id="input-position" type="text" placeholder="Posición (ej. Lateral derecho)" autocomplete="off">
+      <input id="input-number" type="number" placeholder="Dorsal (ej. 9)" min="0">
+      <div class="buttons">
+        <button id="check-btn">Comprobar</button>
+        <button id="hint-btn">Pista</button>
+        <button id="skip-btn">Saltar</button>
+      </div>
+      <p id="feedback" class="feedback"></p>
+      <p>Puntuación: <span id="score">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Datos y fotos desde la web oficial del Real Betis. Guarda las imágenes en /images/ según instrucciones.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
